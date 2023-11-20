@@ -4,6 +4,7 @@
 var textfield
 
 document.addEventListener("DOMContentLoaded", function () {
+    $('body, html').animate({ scrollTop: 0 }, 600);
     textfield = document.getElementById("textfield")
     govisshonu();
 });
@@ -18,19 +19,10 @@ function govisshonu(){
         if (log.endsWith("(´･_･`)")) {
             textfield.innerHTML = `${log}<br>${log.length}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！`;
             makeresult(log.length);
-            scrollToBottom();
+            $('body, html').animate({ scrollTop: $(document).height() }, 600);
             return;
         }
     }
-}
-
-function scrollToBottom() {
-    var element = document.body;
-    var bottom = element.scrollHeight - element.clientHeight;
-    window.scrollTo({
-        top: bottom,
-        behavior: 'smooth'
-    });
 }
 
 function makeresult(length){
