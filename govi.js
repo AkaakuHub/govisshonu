@@ -25,7 +25,7 @@ function govisshonu(){
 }
 
 function scrollToBottom() {
-    var element = document.documentElement;
+    var element = document.body;
     var bottom = element.scrollHeight - element.clientHeight;
     window.scrollTo({
         top: bottom,
