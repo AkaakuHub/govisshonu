@@ -10,7 +10,7 @@ def govisshonu
         logarray << w
         print w
         if w == ")"
-            if logarray.slice(-7).join("") == "(´･_･`)"
+            if logarray[-7..-1].join == "(´･_･`)"
                 puts "\n#{logarray.length}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！"
                 return
             end
