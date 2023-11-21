@@ -11,7 +11,7 @@ def govisshonu():
         logarray.append(w)
         print(w, end = "")
         if w == ")":
-            if "".join(logarray[7:]) == "(´･_･`)":
+            if "".join(logarray[-7:]) == "(´･_･`)":
                 print(f"\n{len(logarray)}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！")
                 return
 
