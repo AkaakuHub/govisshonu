@@ -3,16 +3,17 @@
 
 def govisshonu
     srand
-    log = ""
+    logarray = []
     dict = ["(", "´", "･", "_", "･", "`", ")"]
     while true do
-        chosen = rand(0...dict.length)
-        w = dict[chosen]
-        log += w
+        w = dict[rand(0...dict.length)]
+        logarray << w
         print w
-        if log.include?("(´･_･`)")
-            puts "#{log.length}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！"
-            return
+        if w == ")"
+            if logarray.slice(-7).join("") == "(´･_･`)"
+                puts "\n#{logarray.join("").length}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！"
+                return
+            end
         end
     end
 end
