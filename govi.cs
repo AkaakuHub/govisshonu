@@ -25,7 +25,8 @@ class Program
             Console.Write(w);
 
             if (w == ')')
-            {
+            {   
+                if (logArray.Length < 7) continue;
                 string lastSevenChars = new string(logArray.AsSpan(logArray.Length - 7).ToArray());
                 if (lastSevenChars == "(´･_･`)")
                 {
