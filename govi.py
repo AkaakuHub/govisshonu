@@ -4,15 +4,15 @@
 import random
 
 def govisshonu():
-    log = ""
+    logarray = []
     dict = ["(", "´", "･", "_", "･", "`", ")"]
     while True:
-        chosen = random.randint(0, len(dict) - 1)
-        w = dict[chosen]
-        log += w
+        w = dict[random.randint(0, len(dict) - 1)]
+        logarray.append(w)
         print(w, end = "")
-        if ("(´･_･`)") in log:
-            print(f"{len(log)}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！")
-            return
+        if w == ")":
+            if "".join(logarray[-7:]) == "(´･_･`)":
+                print(f"{len(logarray)}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！")
+                return
 
 govisshonu() if __name__ == "__main__" else None
