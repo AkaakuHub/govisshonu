@@ -12,7 +12,7 @@ def govisshonu():
         print(w, end = "")
         if w == ")":
             if "".join(logarray[-7:]) == "(´･_･`)":
-                print(f"{len(logarray)}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！")
+                print(f"\n{len(logarray)}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！")
                 return
 
 govisshonu() if __name__ == "__main__" else None
