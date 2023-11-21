@@ -16,11 +16,13 @@ function govisshonu(){
         let chosen = Math.floor(Math.random() * dict.length);
         let w = dict[chosen];
         log += w;
-        if (log.endsWith("(´･_･`)")) {
-            textfield.innerHTML = `${log}<br>${log.length}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！`;
-            makeresult(log.length);
-            $('body, html').animate({ scrollTop: $(document).height() }, 600);
-            return;
+        if (w === ")") {
+            if (log.endsWith("(´･_･`)")) {
+                textfield.innerHTML = `${log}<br>${log.length}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！`;
+                makeresult(log.length);
+                $('body, html').animate({ scrollTop: $(document).height() }, 600);
+                return;
+            }
         }
     }
 }
