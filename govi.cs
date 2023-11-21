@@ -1,3 +1,6 @@
+// (´･_･`)
+// ゴヴィッショヌ in C#
+
 using System;
 
 class Program
