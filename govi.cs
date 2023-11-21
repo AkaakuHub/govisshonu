@@ -10,7 +10,7 @@ class Program
     static void govisshonu()
     {
         Random rand = new Random();
-        char[] dict = { "(", "´", "･", "_", "･", "`", ")" };
+        char[] dict = { '(', '´', '･', '_', '･', '`', ')' };
         char[] logArray = new char[0];
 
         while (true)
@@ -21,10 +21,9 @@ class Program
 
             Console.Write(w);
 
-            if (w == ")")
+            if (w == ')')
             {
                 string lastSevenChars = new string(logArray.AsSpan(logArray.Length - 7).ToArray());
-
                 if (lastSevenChars == "(´･_･`)")
                 {
                     Console.WriteLine($"\n{logArray.Length}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！");
