@@ -10,11 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function govisshonu() {
-    var log = "";
-    const dict = ["(", "´", "･", "_", "･", "`", ")"];
-    
-    // 文字列結合ではなく、配列を使って最後に join する
     var logArray = [];
+    const dict = ["(", "´", "･", "_", "･", "`", ")"];
 
     while (true) {
         let w = dict[Math.floor(Math.random() * dict.length)];
