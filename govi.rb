@@ -11,7 +11,7 @@ def govisshonu
         print w
         if w == ")"
             if logarray.slice(-7).join("") == "(´･_･`)"
-                puts "\n#{logarray.join("").length}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！"
+                puts "\n#{logarray.length}文字目でｺﾞｳﾞｨｯｼｮﾇが完成しました！"
                 return
             end
         end
