@@ -6,7 +6,7 @@ function govisshonu() {
     const dict: string[] = ["(", "´", "･", "_", "･", "`", ")"];
 
     while (true) {
-        let w: string = dict[Math.floor(Math.random() * dict.length)];
+        let w: string = dict[Math.floor(Math.random() * 7)];
         logArray.push(w);
 
         if (w === ")") {
