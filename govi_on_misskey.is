@@ -1,0 +1,36 @@
+/// @ 0.16.0
+// (･_･)
+// ちびゴヴィッショヌ in AiScript on misskey
+@govisshonu() {
+    var logArray = []
+    let dict = ["(", "･", "_", "･", ")"]
+    var seed = 0
+    var ct = 0
+    loop {
+        seed = (seed + Date:now().to_str().slice(11,13).to_num()) % 5
+        let w = dict[seed]
+        logArray.push(w)
+        ct += 1
+        if (w == ")") {
+            if (logArray.slice(ct - 5, ct).join("") == "(･_･)") {
+                 return `{logArray.join("")}{Str:lf}{ct}文字目でちびｺﾞｳﾞｨｯｼｮﾇが完成しました！ `
+            }
+        }
+    }
+}
+
+Ui:render([
+	Ui:C:container({
+		align: 'center'
+		children: [
+			Ui:C:postFormButton({
+				text: "(･_･)"
+				rounded: true
+				primary: true
+				form: {
+					text: govisshonu()
+				}
+			})
+		]
+	})
+])
