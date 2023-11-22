@@ -6,7 +6,7 @@ def govisshonu
     logarray = []
     dict = ["(", "´", "･", "_", "･", "`", ")"]
     while true do
-        w = dict[rand(0...dict.length)]
+        w = dict[rand(0...7)]
         logarray << w
         print w
         if w == ")"
