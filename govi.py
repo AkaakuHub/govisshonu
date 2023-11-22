@@ -7,7 +7,7 @@ def govisshonu():
     logarray = []
     dict = ["(", "´", "･", "_", "･", "`", ")"]
     while True:
-        w = dict[random.randint(0, len(dict) - 1)]
+        w = dict[random.randint(0, 6)]
         logarray.append(w)
         print(w, end = "")
         if w == ")":
