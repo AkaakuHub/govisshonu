@@ -14,7 +14,7 @@ function govisshonu() {
     const dict = ["(", "´", "･", "_", "･", "`", ")"];
 
     while (true) {
-        let w = dict[Math.floor(Math.random() * dict.length)];
+        let w = dict[Math.floor(Math.random() * 7)];
         logArray.push(w);
 
         if (w === ")") {
