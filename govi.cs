@@ -18,7 +18,7 @@ class Program
 
         while (true)
         {
-            char w = dict[rand.Next(0, dict.Length)];
+            char w = dict[rand.Next(0, 7)];
             Array.Resize(ref logArray, logArray.Length + 1);
             logArray[^1] = w;
 
